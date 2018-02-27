@@ -25,7 +25,6 @@
         `;
       }
     }
-
     class PageTwo extends HTMLElement {
       connectedCallback() {
         this.innerHTML = `
@@ -45,13 +44,11 @@
                   <ion-button class="next">Go to Page Two</ion-button>
                 </ion-nav-push>
               </div>
-
             </ion-content>
           </ion-page>
         `;
       }
     }
-
     class PageThree extends HTMLElement {
       connectedCallback() {
         this.innerHTML = `
@@ -71,11 +68,9 @@
         `;
       }
     }
-
     customElements.define('page-one', PageOne);
     customElements.define('page-two', PageTwo);
     customElements.define('page-three', PageThree);
-
   </script>
 </head>
 <body>

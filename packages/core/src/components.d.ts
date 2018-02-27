@@ -11,7 +11,6 @@ import {
   FrameworkDelegate,
   PickerColumn,
   PickerOptions,
-  RouterDelegate,
 } from './index';
 import {
   ActionSheetButton,
@@ -31,6 +30,7 @@ import {
 import {
   App,
   FrameworkDelegate as FrameworkDelegate2,
+  RouterDelegate,
 } from '.';
 import {
   PickerButton,
@@ -2010,8 +2010,8 @@ declare global {
 
 
 import {
-  Nav as IonNav
-} from './components/nav/nav';
+  NavControllerBase as IonNav
+} from './components/nav2/nav';
 
 declare global {
   interface HTMLIonNavElement extends IonNav, HTMLStencilElement {
@@ -2035,7 +2035,6 @@ declare global {
     export interface IonNavAttributes extends HTMLAttributes {
       delegate?: FrameworkDelegate;
       lazy?: boolean;
-      mode?: string;
       root?: any;
       routerDelegate?: RouterDelegate;
       swipeBackEnabled?: boolean;
